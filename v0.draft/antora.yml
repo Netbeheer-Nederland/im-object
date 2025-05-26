@@ -1,0 +1,6 @@
+name: im-object
+version: v0.draft
+title: Object
+nav:
+- modules/ROOT/nav.adoc
+- modules/schema/nav.adoc

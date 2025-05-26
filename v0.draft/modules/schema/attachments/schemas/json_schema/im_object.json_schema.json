@@ -1,0 +1,174 @@
+{
+    "$defs": {
+        "IdentifiedObject": {
+            "additionalProperties": false,
+            "description": "This is a root class to provide common identification for all classes needing identification and naming attributes.",
+            "properties": {
+                "description": {
+                    "description": "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "m_rid": {
+                    "description": "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\r\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.",
+                    "type": "string"
+                },
+                "names": {
+                    "description": "All names of this identified object.",
+                    "items": {
+                        "$ref": "#/$defs/Name"
+                    },
+                    "type": "array"
+                },
+                "object_type": {
+                    "description": "Type of the IdentifiedObject."
+                }
+            },
+            "required": [
+                "m_rid",
+                "object_type",
+                "names"
+            ],
+            "title": "IdentifiedObject",
+            "type": "object"
+        },
+        "Name": {
+            "additionalProperties": false,
+            "description": "The Name class provides the means to define any number of human readable  names for an object. A name is <b>not</b> to be used for defining inter-object relationships. For inter-object relationships instead use the object identification 'mRID'.",
+            "properties": {
+                "name": {
+                    "description": "Any free text that name the object.",
+                    "type": "string"
+                },
+                "name_type": {
+                    "$ref": "#/$defs/NameType",
+                    "description": "Type of this name."
+                }
+            },
+            "required": [
+                "name",
+                "name_type"
+            ],
+            "title": "Name",
+            "type": "object"
+        },
+        "NameType": {
+            "additionalProperties": false,
+            "description": "Type of name. Possible values for attribute 'name' are implementation dependent but standard profiles may specify types. An enterprise may have multiple IT systems each having its own local name for the same object, e.g. a planning system may have different names from an EMS. An object may also have different names within the same IT system, e.g. localName as defined in CIM version 14. The definition from CIM14 is:\r\nThe localName is a human readable name of the object. It is a free text name local to a node in a naming hierarchy similar to a file directory structure. A power system related naming hierarchy may be: Substation, VoltageLevel, Equipment etc. Children of the same parent in such a hierarchy have names that typically are unique among them.",
+            "properties": {
+                "description": {
+                    "description": "Description of the name type.\r\n",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "Name of the name type.\r\n",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name_type_authority": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/NameTypeAuthority"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Authority responsible for managing names of this type."
+                },
+                "object_type": {
+                    "description": "Type of the name, as identified by URI."
+                }
+            },
+            "title": "NameType",
+            "type": "object"
+        },
+        "NameTypeAuthority": {
+            "additionalProperties": false,
+            "description": "Authority responsible for creation and management of names of a given type; typically an organization or an enterprise system.",
+            "properties": {
+                "description": {
+                    "description": "Description of the name type authority.\r\n",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "Name of the name type authority.\r\n",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "NameTypeAuthority",
+            "type": "object"
+        },
+        "ObjectDataSet": {
+            "additionalProperties": false,
+            "description": "A single instance of a published dataset.",
+            "properties": {
+                "conforms_to": {},
+                "contact_point": {},
+                "identified_objects": {
+                    "description": "All instances of IdentifiedObjects",
+                    "items": {
+                        "$ref": "#/$defs/IdentifiedObject"
+                    },
+                    "type": "array"
+                },
+                "identifier": {},
+                "release_date": {},
+                "version": {}
+            },
+            "required": [
+                "identifier",
+                "conforms_to",
+                "contact_point",
+                "release_date",
+                "version",
+                "identified_objects"
+            ],
+            "title": "ObjectDataSet",
+            "type": "object"
+        }
+    },
+    "$id": "http://data.netbeheernederland.nl/data-product/im-object",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "description": "A single instance of a published dataset.",
+    "metamodel_version": "1.7.0",
+    "properties": {
+        "conforms_to": {},
+        "contact_point": {},
+        "identified_objects": {
+            "description": "All instances of IdentifiedObjects",
+            "items": {
+                "$ref": "#/$defs/IdentifiedObject"
+            },
+            "type": "array"
+        },
+        "identifier": {},
+        "release_date": {},
+        "version": {}
+    },
+    "required": [
+        "identifier",
+        "conforms_to",
+        "contact_point",
+        "release_date",
+        "version",
+        "identified_objects"
+    ],
+    "title": "im-object",
+    "type": "object",
+    "version": "v0.draft"
+}
