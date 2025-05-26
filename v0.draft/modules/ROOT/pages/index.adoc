@@ -1,4 +1,4 @@
-= Object
+= Code List
 
 This data product manages any and all objects which are under master data
 management by Netbeheer Nederland.
