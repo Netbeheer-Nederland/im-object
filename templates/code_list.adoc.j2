@@ -35,12 +35,12 @@ within the scope of the code list.
 [cols="6,1,3,3",width=100%]
 |===
 |mRID |Name |Type |Issuer
-
 {%- for obj in objects %}
 {%- set n_object_type = obj.names[0].name_type.object_type %}
 {%- set n_name = obj.names[0].name_type.name %}
 {%- set nt_object_type = obj.names[0].name_type.name_type_authority.object_type %}
 {%- set nt_name = obj.names[0].name_type.name_type_authority.name %}
+
  |{{ obj.m_rid }}
  |{{ obj.names[0].name }}
 a|{% if n_object_type %}{{ n_object_type }}[definition]{% else %}{{ n_name }}{% endif %}
