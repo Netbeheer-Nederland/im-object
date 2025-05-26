@@ -1,6 +1,0 @@
-name: im-object
-version: v0.draft
-title: Code List
-nav:
-- modules/ROOT/nav.adoc
-- modules/schema/nav.adoc
