@@ -1,0 +1,127 @@
+= Code List
+
+This data product manages any and all objects which are under master data
+management by Netbeheer Nederland.
+
+.Data Product
+[d2,svg,theme=4]
+----
+vars: {
+  d2-config: {
+    pad: 20
+  }
+}
+
+grid-rows: 5
+grid-columns: 3
+
+horizontal-gap: 160
+vertical-gap: 80
+
+ObjectDataSet.class: dataset
+IdentifiedObject.class: grid
+Name.class: grid
+
+1.class: empty
+2.class: empty
+NameType.class: grid
+
+3.class: empty
+4.class: empty
+NameTypeAuthority.class: grid
+
+ObjectDataSet -> IdentifiedObject: "identified_objects"
+IdentifiedObject -> Name: "names"
+Name -> NameType: "name_type"
+NameType -> NameTypeAuthority: "name_type_authority"
+
+legend: "" {
+  style: {
+    fill: transparent
+    stroke: transparent
+  }
+  grid-rows: 3
+  grid-columns: 2
+  grid-gap: 10
+  near: bottom-right
+  iec61968_color: "" {
+    style: {
+      fill: "#d1e7c2"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61968_text: "IEC61968 (Enterprise)" {
+    shape: text
+  }
+  iec61970_color: "" {
+    style: {
+      fill: "#eccfcb"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61970_text: "IEC61970 (Grid)" {
+    shape: text
+  }
+  iec62325_color: "" {
+    style: {
+      fill: "#fffbef"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec62325_text: "IEC62325 (Market)" {
+    shape: text
+  }
+}
+
+classes: {
+  empty: {
+    label: ""
+    style: {
+      fill: transparent
+      stroke: transparent
+    }
+  }
+  grid: {
+    style: {
+      fill: "#eccfcb"
+      shadow: true
+    }
+  }
+  enterprise: {
+    style: {
+      fill: "#d1e7c2"
+      shadow: true
+    }
+  }
+  market: {
+    style: {
+      fill: "#fffbef"
+      shadow: true
+    }
+  }
+  dataset: {
+    style: {
+      shadow: true
+    }
+  }
+}
+----
+
+The following considerations apply:
+
+* NameType.objectType is a generic classification, i.e. use the URI for
+"netbeheerder" instead of "Enexis";
+
+== Additional artifacts
+
+* xref:schema:attachment$schemas/json_schema/im_object.json_schema.json[JSON schema]
+* xref:schema:attachment$examples/im_object.example.json[Example JSON instance data]

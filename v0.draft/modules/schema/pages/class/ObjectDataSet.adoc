@@ -1,0 +1,248 @@
+= `ObjectDataSet`
+:toclevels: 4
+
+
++++A single instance of a published dataset.+++
+
+
+[cols="h,3",width=65%]
+|===
+| Type
+| Class
+
+| URI
+| `this:ObjectDataSet`
+
+
+
+
+|===
+
+== Class hierarchy
+* *`ObjectDataSet`*
+
+
+== Slots
+
+
+
+.Associated classes
+[d2,svg,theme=4]
+----
+vars: {
+  d2-config: {
+    pad: 20
+  }
+}
+ObjectDataSet {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+IdentifiedObject {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+
+ObjectDataSet -> IdentifiedObject: identified_objects
+
+
+legend: "" {
+  style: {
+    fill: transparent
+    stroke: transparent
+  }
+  grid-rows: 3
+  grid-columns: 2
+  grid-gap: 10
+  near: bottom-right
+  iec61968_color: "" {
+    style: {
+      fill: "#d1e7c2"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61968_text: "IEC61968 (Enterprise)" {
+    shape: text
+  }
+  iec61970_color: "" {
+    style: {
+      fill: "#eccfcb"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61970_text: "IEC61970 (Grid)" {
+    shape: text
+  }
+  iec62325_color: "" {
+    style: {
+      fill: "#fffbef"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec62325_text: "IEC62325 (Market)" {
+    shape: text
+  }
+}
+----
+
+
+[cols="3,1,3,6",width=100%]
+|===
+| Name | Cardinality | Type | Description
+
+| <<conforms_to,`conforms_to`>>
+| 1
+| n/a
+| n/a
+
+| <<contact_point,`contact_point`>>
+| 1
+| n/a
+| n/a
+
+| <<identifier,`identifier`>>
+| 1
+| n/a
+| n/a
+
+| <<release_date,`release_date`>>
+| 1
+| n/a
+| n/a
+
+| <<version,`version`>>
+| 1
+| n/a
+| n/a
+
+| <<identified_objects,`identified_objects`>>
+| 1..*
+| xref::class/IdentifiedObject.adoc[`IdentifiedObject`]
+| +++All instances of IdentifiedObjects+++
+|===
+
+'''
+
+
+//[discrete]
+[#conforms_to]
+=== `conforms_to`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/conformsTo[`dct:conformsTo`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#contact_point]
+=== `contact_point`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/contactPoint[`dct:contactPoint`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#identified_objects]
+=== `identified_objects`
++++All instances of IdentifiedObjects+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:ObjectDataSet.identifiedObjects`
+| Cardinality
+| 1..*
+| Type
+| xref::class/IdentifiedObject.adoc[`IdentifiedObject`]
+
+
+|===
+
+//[discrete]
+[#identifier]
+=== `identifier`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/identifier[`dct:identifier`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#release_date]
+=== `release_date`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/issued[`dct:issued`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#version]
+=== `version`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://www.w3.org/2002/07/owl#versionInfo[`owl:versionInfo`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+

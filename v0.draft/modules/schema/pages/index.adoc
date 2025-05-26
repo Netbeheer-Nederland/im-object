@@ -1,0 +1,35 @@
+= Index
+
+== Classes
+
+[cols="1,2"]
+|===
+| Name | Description
+
+
+| xref::class/IdentifiedObject.adoc[`IdentifiedObject`]
+| +++This is a root class to provide common identification for all classes needing identification and naming attributes.+++
+
+| xref::class/Name.adoc[`Name`]
+| +++The Name class provides the means to define any number of human readable  names for an object. A name is <b>not</b> to be used for defining inter-object relationships. For inter-object relationships instead use the object identification 'mRID'.+++
+
+| xref::class/NameType.adoc[`NameType`]
+| +++Type of name. Possible values for attribute 'name' are implementation dependent but standard profiles may specify types.  A NameType is a generic type, e.g. 'netbeheerder' for 'name' or a URI for 'object_type'. Do not use the specific URIs for the name, but rather the classification.+++
+
+| xref::class/NameTypeAuthority.adoc[`NameTypeAuthority`]
+| +++Authority responsible for creation and management of names of a given type; typically an organization or an enterprise system.+++
+
+| xref::class/ObjectDataSet.adoc[`ObjectDataSet`]
+| +++A single instance of a published dataset.+++
+
+|===
+
+== Types
+
+No types are defined in the schema.
+
+
+== Enumerations
+
+
+No enumerations are defined in the schema.

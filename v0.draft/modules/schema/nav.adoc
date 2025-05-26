@@ -1,0 +1,23 @@
+[.truncate]
+* Information model
+** xref::index.adoc[Index]
+** Classes
+*** xref::class/ObjectDataSet.adoc[`ObjectDataSet` (root)]
+
+*** xref::class/IdentifiedObject.adoc[`IdentifiedObject`]
+
+
+
+*** xref::class/Name.adoc[`Name`]
+
+
+
+*** xref::class/NameType.adoc[`NameType`]
+
+
+
+*** xref::class/NameTypeAuthority.adoc[`NameTypeAuthority`]
+
+
+
+
