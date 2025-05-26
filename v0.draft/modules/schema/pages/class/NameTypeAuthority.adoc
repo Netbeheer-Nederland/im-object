@@ -43,6 +43,11 @@
 | 0..1
 | https://w3id.org/linkml/String[`string`]
 | +++Name of the name type authority.+++
+
+| <<object_type,`object_type`>>
+| 0..1
+| xref::enumeration/Curie.adoc[`Curie`]
+| +++Type of the name, as identified by URI.+++
 |===
 
 '''
@@ -78,6 +83,23 @@
 | 0..1
 | Type
 | https://w3id.org/linkml/String[`string`]
+
+
+|===
+
+//[discrete]
+[#object_type]
+=== `object_type`
++++Type of the name, as identified by URI.+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/NameTypeAuthority.objectType[`nbnl:NameTypeAuthority.objectType`]
+| Cardinality
+| 0..1
+| Type
+| xref::enumeration/Curie.adoc[`Curie`]
 
 
 |===

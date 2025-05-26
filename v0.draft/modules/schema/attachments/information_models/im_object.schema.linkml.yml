@@ -112,17 +112,11 @@ classes:
         multivalued: false
     class_uri: cim:Name
   NameType:
-    description: "Type of name. Possible values for attribute 'name' are implementation\
-      \ dependent but standard profiles may specify types. An enterprise may have\
-      \ multiple IT systems each having its own local name for the same object, e.g.\
-      \ a planning system may have different names from an EMS. An object may also\
-      \ have different names within the same IT system, e.g. localName as defined\
-      \ in CIM version 14. The definition from CIM14 is:\r\nThe localName is a human\
-      \ readable name of the object. It is a free text name local to a node in a naming\
-      \ hierarchy similar to a file directory structure. A power system related naming\
-      \ hierarchy may be: Substation, VoltageLevel, Equipment etc. Children of the\
-      \ same parent in such a hierarchy have names that typically are unique among\
-      \ them.\r\n"
+    description: Type of name. Possible values for attribute 'name' are
+      implementation dependent but standard profiles may specify types.  A
+      NameType is a generic type, e.g. 'netbeheerder' for 'name' or a URI for
+      'object_type'. Do not use the specific URIs for the name, but rather the
+      classification.
     from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Core
     attributes:
       description:
@@ -133,7 +127,7 @@ classes:
         multivalued: false
       object_type:
         description: Type of the name, as identified by URI.
-        slot_uri: nbnl:Name.objectType
+        slot_uri: nbnl:NameType.objectType
         range: Curie
         required: false
         multivalued: false
@@ -159,6 +153,12 @@ classes:
         description: "Description of the name type authority.\r\n"
         slot_uri: cim:NameTypeAuthority.description
         range: string
+        required: false
+        multivalued: false
+      object_type:
+        description: Type of the name, as identified by URI.
+        slot_uri: nbnl:NameTypeAuthority.objectType
+        range: Curie
         required: false
         multivalued: false
       name:

@@ -56,7 +56,7 @@
         },
         "NameType": {
             "additionalProperties": false,
-            "description": "Type of name. Possible values for attribute 'name' are implementation dependent but standard profiles may specify types. An enterprise may have multiple IT systems each having its own local name for the same object, e.g. a planning system may have different names from an EMS. An object may also have different names within the same IT system, e.g. localName as defined in CIM version 14. The definition from CIM14 is:\r\nThe localName is a human readable name of the object. It is a free text name local to a node in a naming hierarchy similar to a file directory structure. A power system related naming hierarchy may be: Substation, VoltageLevel, Equipment etc. Children of the same parent in such a hierarchy have names that typically are unique among them.",
+            "description": "Type of name. Possible values for attribute 'name' are implementation dependent but standard profiles may specify types.  A NameType is a generic type, e.g. 'netbeheerder' for 'name' or a URI for 'object_type'. Do not use the specific URIs for the name, but rather the classification.",
             "properties": {
                 "description": {
                     "description": "Description of the name type.\r\n",
@@ -107,6 +107,9 @@
                         "string",
                         "null"
                     ]
+                },
+                "object_type": {
+                    "description": "Type of the name, as identified by URI."
                 }
             },
             "title": "NameTypeAuthority",

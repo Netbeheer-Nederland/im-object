@@ -14,8 +14,7 @@
 | +++The Name class provides the means to define any number of human readable  names for an object. A name is <b>not</b> to be used for defining inter-object relationships. For inter-object relationships instead use the object identification 'mRID'.+++
 
 | xref::class/NameType.adoc[`NameType`]
-| +++Type of name. Possible values for attribute 'name' are implementation dependent but standard profiles may specify types. An enterprise may have multiple IT systems each having its own local name for the same object, e.g. a planning system may have different names from an EMS. An object may also have different names within the same IT system, e.g. localName as defined in CIM version 14. The definition from CIM14 is:
-The localName is a human readable name of the object. It is a free text name local to a node in a naming hierarchy similar to a file directory structure. A power system related naming hierarchy may be: Substation, VoltageLevel, Equipment etc. Children of the same parent in such a hierarchy have names that typically are unique among them.+++
+| +++Type of name. Possible values for attribute 'name' are implementation dependent but standard profiles may specify types.  A NameType is a generic type, e.g. 'netbeheerder' for 'name' or a URI for 'object_type'. Do not use the specific URIs for the name, but rather the classification.+++
 
 | xref::class/NameTypeAuthority.adoc[`NameTypeAuthority`]
 | +++Authority responsible for creation and management of names of a given type; typically an organization or an enterprise system.+++
