@@ -1,22 +1,39 @@
 = Object
 
-
+This data product manages any and all objects which are under master data
+management by Netbeheer Nederland.
 
 .Data Product
 [d2,svg,theme=4]
 ----
-grid-rows: 5
-grid-columns: 5
-
-horizontal-gap: 160
-vertical-gap: 80
-
 vars: {
   d2-config: {
     pad: 20
   }
 }
 
+grid-rows: 5
+grid-columns: 3
+
+horizontal-gap: 160
+vertical-gap: 80
+
+ObjectDataSet.class: dataset
+IdentifiedObject.class: grid
+Name.class: grid
+
+1.class: empty
+2.class: empty
+NameType.class: grid
+
+3.class: empty
+4.class: empty
+NameTypeAuthority.class: grid
+
+ObjectDataSet -> IdentifiedObject: "identified_objects"
+IdentifiedObject -> Name: "names"
+Name -> NameType: "name_type"
+NameType -> NameTypeAuthority: "name_type_authority"
 
 legend: "" {
   style: {
@@ -98,6 +115,11 @@ classes: {
   }
 }
 ----
+
+The following considerations apply:
+
+* NameType.objectType is a generic classification, i.e. use the URI for
+"netbeheerder" instead of "Enexis";
 
 == Additional artifacts
 

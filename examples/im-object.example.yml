@@ -9,14 +9,14 @@ identified_objects:
     names:
       - name: 'NL'
         name_type:
-          name: 'alpha-2'
+          object_type: 'https://www.iso.org/obp/ui/#iso:pub:PUB500001:en'
           name_type_authority:
-            name: 'ISO-3166-1'
+            object_type: 'https://www.iso.org/obp/ui/#iso:std:iso:3166:-1:en'
   - m_rid: 4f74c8e2-adb5-4815-9607-eb00fb6a0d55
     object_type: 'cim:SubGeographicalRegion'
     names:
       - name: 'Liander'
         name_type:
-          name: 'System Operator License Area.'
+          object_type: 'https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder'
           name_type_authority:
             name: 'Netbeheer Nederland'
