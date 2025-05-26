@@ -1,1 +1,0 @@
-* xref:im-object::design.adoc[]
