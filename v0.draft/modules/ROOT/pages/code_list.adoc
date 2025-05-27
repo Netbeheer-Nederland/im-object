@@ -46,3 +46,7 @@ a|https://www.iso.org/obp/ui/#iso:std:iso:3166:-1:en[definition]
 a|https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder[definition]
 a|Netbeheer Nederland
 |===
+
+== Additional artifacts
+
+* xref:schema:attachment$examples/code_list.json[NBNL Code List JSON source]
