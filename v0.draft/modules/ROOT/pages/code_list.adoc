@@ -1,27 +1,20 @@
-= NBNL Code List
+= NBNL Object Register
 
-[cols="h,3",width=65%]
-|===
-| Name
-| Value
+Maintainer::
+    mailto:teamsemantiek@netbeheernederland.nl[Team Semantiek] (Netbeheer Nederland)
+Version::
+    1.0.0
+Release date::
+    2025-05-26
 
-|Version
-|1.0.0
-
-|Release date
-|2025-05-26
-
-|Contact
-|ritger.teunissen@alliander.com
-|===
-
-The _NBNL Code List_ is a predefined, controlled set of permissible values used
-to ensure consistency and interoperability in data exchange, validation, and
-interpretation. Each value in the list provides a clear definition and may be
-associated with metadata such as descriptions, status, or authoritative source.
+The _NBNL Object Register_ is a predefined, controlled set of permissible
+values used to ensure consistency and interoperability in data exchange,
+validation, and interpretation. Each value in the list provides a clear
+definition and may be associated with metadata such as descriptions, status, or
+authoritative source.
 
 This list is maintained by _Team Semantiek_ and is considered authoritative
-within the scope of the code list.
+within the scope of the object register.
 
 == cim:GeographicalRegion
 
@@ -31,8 +24,8 @@ within the scope of the code list.
 
  |3061d9bc-a20e-4b72-85b7-042c731f86be
  |NL
-a|https://www.iso.org/obp/ui/#iso:pub:PUB500001:en[definition]
-a|https://www.iso.org/obp/ui/#iso:std:iso:3166:-1:en[definition]
+a|https://www.iso.org/obp/ui/#iso:pub:PUB500001:en[Definition]
+a|https://www.iso.org/obp/ui/#iso:std:iso:3166:-1:en[Definition]
 |===
 
 == cim:SubGeographicalRegion
@@ -43,10 +36,10 @@ a|https://www.iso.org/obp/ui/#iso:std:iso:3166:-1:en[definition]
 
  |4f74c8e2-adb5-4815-9607-eb00fb6a0d55
  |Liander
-a|https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder[definition]
+a|https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder[Definition]
 a|Netbeheer Nederland
 |===
 
 == Additional artifacts
 
-* xref:schema:attachment$examples/code_list.json[NBNL Code List JSON source]
+* xref:schema:attachment$examples/code_list.json[NBNL Object Register JSON source]

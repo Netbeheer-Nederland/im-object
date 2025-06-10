@@ -1,7 +1,7 @@
-= Code List
+= Object Register
 
 This data product manages any and all objects which are under master data
-management by Netbeheer Nederland.
+management by _Netbeheer Nederland_.
 
 .Data Product
 [d2,svg,theme=4]
