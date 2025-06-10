@@ -1,27 +1,20 @@
-= NBNL Code List
+= NBNL Object Register
 
-[cols="h,3",width=65%]
-|===
-| Name
-| Value
+Maintainer::
+    mailto:teamsemantiek@netbeheernederland.nl[Team Semantiek] (Netbeheer Nederland)
+Version::
+    {{ version }}
+Release date::
+    {{ release_date }}
 
-|Version
-|{{ version }}
-
-|Release date
-|{{ release_date }}
-
-|Contact
-|{{ contact_point }}
-|===
-
-The _NBNL Code List_ is a predefined, controlled set of permissible values used
-to ensure consistency and interoperability in data exchange, validation, and
-interpretation. Each value in the list provides a clear definition and may be
-associated with metadata such as descriptions, status, or authoritative source.
+The _NBNL Object Register_ is a predefined, controlled set of permissible
+values used to ensure consistency and interoperability in data exchange,
+validation, and interpretation. Each value in the list provides a clear
+definition and may be associated with metadata such as descriptions, status, or
+authoritative source.
 
 This list is maintained by _Team Semantiek_ and is considered authoritative
-within the scope of the code list.
+within the scope of the object register.
 
 {%- set objects_by_type = {} %}
 {%- for obj in identified_objects %}
@@ -43,12 +36,12 @@ within the scope of the code list.
 
  |{{ obj.m_rid }}
  |{{ obj.names[0].name }}
-a|{% if n_object_type %}{{ n_object_type }}[definition]{% else %}{{ n_name }}{% endif %}
-a|{% if nt_object_type %}{{ nt_object_type }}[definition]{% else %}{{ nt_name }}{% endif %}
+a|{% if n_object_type %}{{ n_object_type }}[Definition]{% else %}{{ n_name }}{% endif %}
+a|{% if nt_object_type %}{{ nt_object_type }}[Definition]{% else %}{{ nt_name }}{% endif %}
 {%- endfor %}
 |===
 {%- endfor %}
 
 == Additional artifacts
 
-* xref:schema:attachment$examples/code_list.json[NBNL Code List JSON source]
+* xref:schema:attachment$examples/code_list.json[NBNL Object Register JSON source]
