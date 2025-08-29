@@ -1,0 +1,114 @@
+{
+  "identifier": "8c81918c-edff-404f-a147-9de90e33be16",
+  "conforms_to": "http://data.netbeheernederland.nl/data-product/im-object",
+  "contact_point": "ritger.teunissen@alliander.com",
+  "release_date": "2025-05-26",
+  "version": "1.0.0",
+  "identified_objects": [
+    {
+      "m_rid": "3061d9bc-a20e-4b72-85b7-042c731f86be",
+      "object_type": "cim:GeographicalRegion",
+      "names": [
+        {
+          "name": "NL",
+          "name_type": {
+            "object_type": "https://www.iso.org/obp/ui/#iso:pub:PUB500001:en",
+            "name_type_authority": {
+              "object_type": "https://www.iso.org/obp/ui/#iso:std:iso:3166:-1:en"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "m_rid": "4f74c8e2-adb5-4815-9607-eb00fb6a0d55",
+      "object_type": "cim:SubGeographicalRegion",
+      "names": [
+        {
+          "name": "Liander",
+          "name_type": {
+            "object_type": "https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder",
+            "name_type_authority": {
+              "name": "Netbeheer Nederland"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "m_rid": "2128cb2f-9425-4cf7-9462-9fd59e06542d",
+      "object_type": "cim:SubGeographicalRegion",
+      "names": [
+        {
+          "name": "TenneT",
+          "name_type": {
+            "object_type": "https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder",
+            "name_type_authority": {
+              "name": "Netbeheer Nederland"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "m_rid": "8430da67-c674-4907-8011-718ca928c6b2",
+      "object_type": "cim:BaseVoltage",
+      "names": [
+        {
+          "name": "Laagspanning (400 V)",
+          "name_type": {
+            "object_type": "https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/laagspanning",
+            "name_type_authority": {
+              "name": "Netbeheer Nederland"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "m_rid": "b69112f9-1e8f-4527-8907-92bc78e6a391",
+      "object_type": "cim:BaseVoltage",
+      "names": [
+        {
+          "name": "Middenspanning (10 kV)",
+          "name_type": {
+            "object_type": "https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/middenspanning",
+            "name_type_authority": {
+              "name": "Netbeheer Nederland"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "m_rid": "3685a2ae-e03c-4846-a613-5451f4caefca",
+      "object_type": "cim:BaseVoltage",
+      "names": [
+        {
+          "name": "Hoogspanning (110 kV)",
+          "name_type": {
+            "object_type": "https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/hoogspanning",
+            "name_type_authority": {
+              "name": "Netbeheer Nederland"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "m_rid": "3d2d86e6-be41-4259-a55f-b3ed254b35a9",
+      "object_type": "cim:BaseVoltage",
+      "names": [
+        {
+          "name": "Hoogspanning (150 kV)",
+          "name_type": {
+            "object_type": "https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/hoogspanning",
+            "name_type_authority": {
+              "name": "Netbeheer Nederland"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
