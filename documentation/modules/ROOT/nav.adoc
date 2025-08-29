@@ -1,1 +1,1 @@
-* xref::code_list.adoc[]
+* xref::object_register.adoc[]
