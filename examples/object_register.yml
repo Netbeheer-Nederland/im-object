@@ -1,7 +1,7 @@
 identifier: '8c81918c-edff-404f-a147-9de90e33be16'
 conforms_to: http://data.netbeheernederland.nl/data-product/im-object
 contact_point: 'ritger.teunissen@alliander.com'
-release_date: '2025-05-26'
+release_date: '2025-12-09'
 version: 1.0.0
 identified_objects:
   - m_rid: 3061d9bc-a20e-4b72-85b7-042c731f86be
@@ -12,10 +12,26 @@ identified_objects:
           object_type: 'https://www.iso.org/obp/ui/#iso:pub:PUB500001:en'
           name_type_authority:
             object_type: 'https://www.iso.org/obp/ui/#iso:std:iso:3166:-1:en'
+  - m_rid: 158a245d-79f4-4380-bf77-5f128dc3dee8
+    object_type: 'cim:SubGeographicalRegion'
+    names:
+      - name: 'Enexis'
+        name_type:
+          object_type: 'https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder'
+          name_type_authority:
+            name: 'Netbeheer Nederland'
   - m_rid: 4f74c8e2-adb5-4815-9607-eb00fb6a0d55
     object_type: 'cim:SubGeographicalRegion'
     names:
       - name: 'Liander'
+        name_type:
+          object_type: 'https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder'
+          name_type_authority:
+            name: 'Netbeheer Nederland'
+  - m_rid: 0d00cb60-dd49-4d00-a720-19a0025807f0
+    object_type: 'cim:SubGeographicalRegion'
+    names:
+      - name: 'Stedin'
         name_type:
           object_type: 'https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder'
           name_type_authority:
