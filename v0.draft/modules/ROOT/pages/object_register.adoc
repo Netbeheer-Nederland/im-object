@@ -5,7 +5,7 @@ Maintainer::
 Version::
     1.0.0
 Release date::
-    2025-12-09
+    2026-02-20
 
 The _NBNL Object Register_ is a predefined, controlled set of permissible
 values used to ensure consistency and interoperability in data exchange,
@@ -61,22 +61,22 @@ a|Netbeheer Nederland
 |===
 |mRID |Name |Type |Issuer
 
- |8430da67-c674-4907-8011-718ca928c6b2
+ |b7482b2f-bcb8-46e9-99b1-e0cd09f3c205
  |Laagspanning (400 V)
 a|https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/laagspanning[Definition]
 a|Netbeheer Nederland
 
- |b69112f9-1e8f-4527-8907-92bc78e6a391
+ |45b9413e-a116-4952-8cf8-aeb4b2e53348
  |Middenspanning (10 kV)
 a|https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/middenspanning[Definition]
 a|Netbeheer Nederland
 
- |3685a2ae-e03c-4846-a613-5451f4caefca
+ |b8e17237e0ca4fca9e4e285b80ab30d0
  |Hoogspanning (110 kV)
 a|https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/hoogspanning[Definition]
 a|Netbeheer Nederland
 
- |3d2d86e6-be41-4259-a55f-b3ed254b35a9
+ |e50ca4bd591d4c30bd6eca3635f70516
  |Hoogspanning (150 kV)
 a|https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/hoogspanning[Definition]
 a|Netbeheer Nederland
