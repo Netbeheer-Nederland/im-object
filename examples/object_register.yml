@@ -1,7 +1,7 @@
 identifier: '8c81918c-edff-404f-a147-9de90e33be16'
-conforms_to: http://data.netbeheernederland.nl/data-product/im-object
-contact_point: 'ritger.teunissen@alliander.com'
-release_date: '2025-12-09'
+conforms_to: http://modellen.netbeheernederland.nl/object
+contact_point: 'teamsemantiek@netbeheernederland.nl'
+release_date: '2026-02-20'
 version: 1.0.0
 identified_objects:
   - m_rid: 3061d9bc-a20e-4b72-85b7-042c731f86be
@@ -44,7 +44,7 @@ identified_objects:
           object_type: 'https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/netbeheerder'
           name_type_authority:
             name: 'Netbeheer Nederland'
-  - m_rid: 8430da67-c674-4907-8011-718ca928c6b2
+  - m_rid: b7482b2f-bcb8-46e9-99b1-e0cd09f3c205
     object_type: 'cim:BaseVoltage'
     names:
       - name: 'Laagspanning (400 V)'
@@ -52,7 +52,7 @@ identified_objects:
           object_type: 'https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/laagspanning'
           name_type_authority:
             name: 'Netbeheer Nederland'
-  - m_rid: b69112f9-1e8f-4527-8907-92bc78e6a391
+  - m_rid: 45b9413e-a116-4952-8cf8-aeb4b2e53348
     object_type: 'cim:BaseVoltage'
     names:
       - name: 'Middenspanning (10 kV)'
@@ -60,7 +60,7 @@ identified_objects:
           object_type: 'https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/middenspanning'
           name_type_authority:
             name: 'Netbeheer Nederland'
-  - m_rid: 3685a2ae-e03c-4846-a613-5451f4caefca
+  - m_rid: b8e17237e0ca4fca9e4e285b80ab30d0
     object_type: 'cim:BaseVoltage'
     names:
       - name: 'Hoogspanning (110 kV)'
@@ -68,7 +68,7 @@ identified_objects:
           object_type: 'https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/hoogspanning'
           name_type_authority:
             name: 'Netbeheer Nederland'
-  - m_rid: 3d2d86e6-be41-4259-a55f-b3ed254b35a9
+  - m_rid: e50ca4bd591d4c30bd6eca3635f70516
     object_type: 'cim:BaseVoltage'
     names:
       - name: 'Hoogspanning (150 kV)'
