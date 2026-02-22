@@ -85,3 +85,4 @@ a|Netbeheer Nederland
 == Additional artifacts
 
 * xref:schema:attachment$examples/object_register.json[NBNL Object Register JSON source]
+* xref:dp-object:schema:attachment$examples/jsonld/dp_object.example.jsonld[NBNL Object Register JSON-LD source]
