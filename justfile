@@ -247,6 +247,9 @@ generate-documentation: _post-process-linkml-schema
         "artifacts/information_models/im_object.schema.linkml.yml" \
         "artifacts/documentation/modules/schema"
     echo "- modules/schema/nav.adoc" >> artifacts/documentation/antora.yml
+    poetry run jinja2 --format yaml "templates/object_register.adoc.j2" \
+        "examples/object_register.yml" \
+        --outfile "artifacts/documentation/modules/ROOT/pages/object_register.adoc"
     @echo "… OK."
     @echo
     @echo -e "Generated documentation files at: artifacts/documentation"

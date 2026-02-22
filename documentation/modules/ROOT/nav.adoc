@@ -1,1 +1,1 @@
-* xref:im-object::design.adoc[]
+* xref::object_register.adoc[]
