@@ -124,4 +124,5 @@ The following considerations apply:
 == Additional artifacts
 
 * xref:schema:attachment$schemas/json_schema/im_object.json_schema.json[JSON schema]
+* xref:dp-object:schema:attachment$examples/jsonld/dp_object.example.jsonld[Object Register JSON-LD]
 * xref:schema:attachment$examples/im_object.example.json[Example JSON instance data]
